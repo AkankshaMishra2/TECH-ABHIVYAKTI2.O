@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f8f8; /* Odoo's background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://c8.alamy.com/comp/WFGAMG/watercolor-white-and-light-gray-texture-background-WFGAMG.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    width: 400px;
+    height: 70%;
+}
+
+.login-box {
+    background-color: #ffffff; /* Odoo's login box background color */
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+.login-form {
+            display: flex;
+            flex-direction: column;
+            height: calc(100% - 50px); /* Adjust as needed */
+            justify-content: space-around;
+        }
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4e4e4e; /* Odoo's text color */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4e4e4e; /* Odoo's text color */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    align-self: center;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: purple; /* Odoo's button color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color:lavender; /* Odoo's button hover color */
+}
+.message-box {
+    background-color: rgba(176, 249, 176, 0.7); /* Odoo's green translucent color */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-family: caveat;
+    
+}
+
+.message-box p {
+    color: #111010;
+    text-align: center; /* Text color for the message */
+    margin: 0;
+    font-size: 26px;
+    font-family: caveat;
+    text-emphasis: bold;
+}
+.footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #f3eded;
+            background-color:  rgb(47, 4, 47); /* Odoo's background color */
+            padding: 20px 0;
+            width: 100%;
+            display:inline-flexbox;
+            text-emphasis: bold;
+            font-family: caveat;
+            font-size: 20px;
+        }
+        .h {
+            text-align: center;
+            font-family: 'caveat', cursive;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #1a1a1a; /* Adjust text color as needed */
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="h"><h1>Just one step away from your convinence!!</h1>
+    </div>
+    
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-box">
+                <div class="message-box">
+                    <p>Dont worry your data is safe with us</p>
+                </div>
+            
+            <form class="login-form" action="after_login_.html" method="post">
+                <h1>Login</h1>
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" >login</button>
+            </form>
+        </div>
+    </div>+
+    <div class="footer">
+        <p>&copy; 2023 PennyWiseWay.com All Rights Reserved.</p>
+        <p>Contact: contact@PennyWiseWay.com</p>
+        <p>Experience our cutting-edge expense tracker for efficient financial management!</p>
+    </div>
+    
+
+
+   
+</body>
+</html>
