@@ -1,0 +1,359 @@
+@import url(fontawesome.css);
+@import url(" https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #050505;
+}
+
+/* Basic */
+
+a {
+	color: #3CF;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #FC3;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+p {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-heading h2:before {
+    width: 1px;
+    height: 100px;
+    background-color: rgba(250,250,250,0.1);
+    position: absolute;
+    top: -102px;
+    content: '';
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.section-heading h2 {
+    margin-top: 100px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 15px 20px;
+    border: 2px solid rgba(250,250,250,0.1);
+}
+
+
+/* Buttons */
+
+.main-button a {
+    background-color: #f5a425;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding: 12px 20px;
+    display: inline-block;
+    outline: none;
+}
+
+a.menu-link { display: none; }
+
+@media screen and (max-width: 950px) {
+  a.menu-link {
+    float: right;
+    display: block;
+    font-size: 36px;
+    color: #fff;
+    padding-right: 30px;
+    padding-top: 15px;
+  }
+  nav[role="navigation"] {
+    clear: both;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .js nav[role="navigation"] {
+    overflow: hidden;
+    max-height: 0;
+  }
+  nav[role="navigation"].active {
+    max-height: 20em;
+    height: 20em;
+    overflow-y: scroll;
+  }
+  nav[role="navigation"] ul {
+    top: 0;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(250,250,250,0.25);
+    background-color: rgba(22,34,57,0.99);
+  }
+  nav[role="navigation"] li a {
+    display: block;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgba(250,250,250,0.25);
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  nav[role="navigation"] li:hover a,
+  nav[role="navigation"] li.active a {
+      color: #f5a425;
+  }
+  
+  @media screen and (min-width: 951px) {
+    .js nav[role="navigation"] {
+      max-height: none;
+    }
+
+    nav[role="navigation"] li {
+      display: inline-block;
+      margin: 0 0.25em;
+    }
+    nav[role="navigation"] li a {
+      border: 0;
+    }
+  }
+}
+.dashboard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .dashboard a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  .dashboard a:hover{
+    border: #FC3 1px solid;
+  }
+/* Header */
+
+@media screen and (max-width: 1050px) {
+  .main-header .logo {
+      padding-left: 30px!important;
+  }
+
+  .main-menu {
+      padding-right: 30px!important;
+  }
+
+  .main-menu li {
+      margin-left: 5px!important;
+  }
+}
+
+.main-header {
+    background-color: rgba(22, 22, 22, 0.95);
+    height: 80px;
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    top: 0;
+}
+
+.main-header .logo {
+    float: left;
+    line-height: 80px;
+    padding-left: 60px;
+}
+
+.main-header .logo a {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+}
+.main-header .logo a em {
+    font-style: normal;
+    color: #f5a425;
+}
+
+.main-menu {
+    float: right;
+    padding-right: 60px;
+}
+
+.main-menu li {
+    display: inline-block;
+    line-height: 79px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.main-menu li:first-child {
+    margin-left: 0px;
+}
+
+.main-menu li a {
+    padding: 10px 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+
+
+.main-menu li.has-submenu ul li a:after {
+    display: none;
+}
+.main-nav li:hover a,
+.main-nav li.active a {
+    border: 2px solid #f5a425;
+}
+
+@media (max-width: 950px) {
+  .main-nav li:hover a,
+  .main-nav li.active a {
+    border: 2px solid transparent;
+    border-bottom: 1px solid rgba(250,250,250,0.25);
+  }
+}
+
+.main-banner {
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+    margin-bottom: -7px;
+  }
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 162px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.file-upload input[type="file"] {
+    margin-bottom: 10px;
+}
+
+input[type="text"], select {
+    
+    padding: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+.dashboard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .dashboard a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  .dashboard a:hover {
+    text-decoration: underline;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .transaction-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    height: 200px;
+    overflow-y: auto;
+  }
+  #members li {
+    color: white; /* Sets the text color of the list items to white */
+    /* Add other styles here as needed */
+}
+
+#members li button {
+    color: red; /* Optional: If you want the delete button text to be red */
+    background-color: transparent;
+    border: none;
+    cursor: pointer; /* Changes cursor to pointer on hover over the button */
+}
+
+/* Additional styles for better visibility and layout */
+#members {
+     /* Dark background to contrast the white text */
+    padding: 10px;
+    list-style-type: none; /* Removes the default bullet points */
+}
+
+#members li:not(:last-child) {
+    margin-bottom: 8px; /* Adds spacing between list items, adjust as needed */
+}

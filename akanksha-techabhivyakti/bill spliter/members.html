@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="stylemembers.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-options">
+            <h2>Dashboard</h2>
+            <div class="vertical-menu">
+                <a href="#" onclick="showGroups()">Groups & Friends</a>
+                <a href="#" onclick="showExpenses()">Expenses Dashboard</a>
+                <a href="#" onclick="showCreditsDebits()">Credits & Debits</a>
+            </div>
+        </div>
+        <div class="dashboard-content-container">
+            <div id="groups-friends" class="dashboard-content hidden">
+                <!-- Content for Groups & Friends Dashboard -->
+            </div>
+            <div id="expenses-dashboard" class="dashboard-content hidden">
+                <!-- Content for Expenses Dashboard -->
+            </div>
+            <div id="credits-debits" class="dashboard-content hidden">
+                <!-- Content for Credits & Debits Dashboard -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

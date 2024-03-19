@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group Management</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Dashboard</h2>
+    <a href="/akanksha-techabhivyakti/after_login_.html" class="option">Expense Tracker</a>
+    <a href="/akanksha-techabhivyakti/bill spliter/index.html" class="option">Bill Splitter</a>
+    <a href="" class="option">My Goals</a>
+    <a href="" class="option">leaderBoard and Rewards</a>
+  </div>
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>PENNY</em> WISEWAY</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="/akanksha-techabhivyakti/index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="section main-banner" id="top" data-section="section1">
+<div class="container">
+  <div id="startGroup">
+    <h2>Start a Group</h2>
+    <input type="text" id="groupName" placeholder="Enter Group Name" oninput="handleGroupNameInput()">
+    <!-- Group Type Selection -->
+    <select id="groupType">
+      <option value="">Select Group Type</option>
+      <option value="work">Work</option>
+      <option value="friends">Friends</option>
+      <option value="family">Family</option>
+      <option value="hobby">Hobby</option>
+      <option value="other">Other</option>
+    </select>
+    <!-- Settle Up Day Selection -->
+    <select id="settleUpDay">
+      <option value="">Select Settle Up Day</option>
+      <!-- Generate Days -->
+      <script>
+        for (let day = 1; day <= 31; day++) {
+          document.write(`<option value="${day}">${day}</option>`);
+        }
+      </script>
+    </select>
+  </div>
+  <div id="addMembers" style="display:none;">
+    <h3>Add Group Members</h3>
+    <input type="text" id="memberName" placeholder="Member Name">
+    <input type="email" id="memberEmail" placeholder="Member Email">
+    <button onclick="addMember()">Add Member</button>
+    <ul id="members"></ul>
+  </div>
+  <button id="saveGroup">Save Group</button>
+</div>
+</section>
+<script src="script.js"></script>
+<script src="server.js"></script>
+<script src="server2.js"></script>
+
+</body>
+</html>
